@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3F24D00D2CEE1A3900194CE1 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 3F24D00C2CEE1A3900194CE1 /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3F3629482CEDB77700D1E8AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F24D00D2CEE1A3900194CE1 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +80,10 @@
 		3F36292D2CEDB77400D1E8AF = {
 			isa = PBXGroup;
 			children = (
-				3F3629382CEDB77400D1E8AF /* ScreenshotApp */,
 				3F36294A2CEDB77700D1E8AF /* ScreenshotAppTests */,
 				3F3629542CEDB77800D1E8AF /* ScreenshotAppUITests */,
 				3F3629372CEDB77400D1E8AF /* Products */,
+				3F3629382CEDB77400D1E8AF /* ScreenshotApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +117,7 @@
 			);
 			name = ScreenshotApp;
 			packageProductDependencies = (
+				3F24D00C2CEE1A3900194CE1 /* KeyboardShortcuts */,
 			);
 			productName = ScreenshotApp;
 			productReference = 3F3629362CEDB77400D1E8AF /* ScreenshotApp.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 3F36292D2CEDB77400D1E8AF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3F24D0022CEE159900194CE1 /* XCLocalSwiftPackageReference "../KeyboardShortcuts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3F3629372CEDB77400D1E8AF /* Products */;
 			projectDirPath = "";
@@ -583,6 +592,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3F24D0022CEE159900194CE1 /* XCLocalSwiftPackageReference "../KeyboardShortcuts" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../KeyboardShortcuts;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F24D00C2CEE1A3900194CE1 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F36292E2CEDB77400D1E8AF /* Project object */;
 }
