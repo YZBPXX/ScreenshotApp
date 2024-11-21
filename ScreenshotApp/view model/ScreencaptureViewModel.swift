@@ -33,6 +33,9 @@ class ScreencaptureViewModel: ObservableObject {
     // () 表示空数组
     @Published var images = [NSImage]()
     init() {
+        //KeyboardShortcuts.Name.screenshotCapture 这里进行了省略
+        // onKeyUP()监听
+        // 这里的for 只是一个关键字，跟循环无关
         KeyboardShortcuts.onKeyUp(for: .screenshotCapture) { [self] in
             self.takeScreenshot(for: .area)
         }

@@ -14,7 +14,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            //创建滚动内容
             ScrollView{
+                // 只渲染当前可见区域的内容
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 200, maximum: 300))]){
                     // \.self用元素本身作为标识
                     ForEach(vm.images, id: \.self) { image in
